@@ -10,4 +10,5 @@ urlpatterns = [
     path('artistas/', views.artistas, name='artistas'),
     path("", views.home, name="home"),
     path("sobre/", TemplateView.as_view(template_name="core/sobre.html"), name="sobre"),
+    path("Enquetes/",views.reveillon_poll, name="Enquetes"),
 ]
